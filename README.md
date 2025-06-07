@@ -1,2 +1,2 @@
 # HASH-ResProbEstrut
-Atividade RA3, Trabalho Tabela Hash. 
+Trabalho de Tabela Hash para o RA3.
