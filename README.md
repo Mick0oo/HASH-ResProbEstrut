@@ -8,10 +8,11 @@ Os algoritmos escolhidos para o hashing das tabelas foram: Multiplicação, Rest
 O código se encontra na pasta src. Contém classes para cada HashMap diferente, uma classe Registro (auxiliar) e a classe Main (main, testes).
 
 ## Análise:
-
+O algoritmo de hashing por Dobramento teve o tempo mais rápido de inserção para todos os cenários.
+Os algoritmos de hashing por Multiplicação e Resto de Divisão tiveram uma quantidade de colisões similar para todos os cenários. Já o algoritmo de Dobramento teve muito mais colisões que os outros, chegando a ter 355% mais colisões que o algoritmo de Resto de Divisão no caso dos 100.000 elementos.
 
 ### Referência para a análise:
-_Dados oriundos dos testes no main._
+_Dados oriundos dos testes realizados no main._
 
 #### Tabela de resultados para 1.000 elementos:
 
