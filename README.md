@@ -1,26 +1,35 @@
 # Atividade do RA3 - HASHING
 # Resolução de Problemas Estruturados em Computação
 ## Escopo do projeto:
-Trabalho envolvendo tabelas hash e seus diferentes algoritmos de hashing.
+_Trabalho envolvendo tabelas hash e seus diferentes algoritmos de hashing._
+
 São criadas tabelas hash com 3 tamanhos (1.000, 10.000 ou 100.000 elementos) para 3 diferentes algoritmos de hashing diferentes, resultando em 9 tabelas diferentes. Todas usando o mesmo conjunto de dados criado por meio de seed.
 
 Os algoritmos escolhidos para o hashing das tabelas foram: Multiplicação, Resto de Divisão e Dobramento.
 O código se encontra na pasta src. Contém classes para cada HashMap diferente, uma classe Registro (auxiliar) e a classe Main (main, testes).
 
 ## Análise:
-Para tempo de inserção o algoritmo de hashing por Dobramento fora o mais rápido em todos os cenários.
+__Para tempo de inserção:__
 
-As quantidades de colisões dos algoritmos de hashing por Multiplicação e Resto de Divisão foram similar para todos os cenários. Já o algoritmo de Dobramento, ao aumentar o volume, ocorreram muito mais colisões que os outros, chegando a ter 355% mais colisões que o algoritmo de Resto de Divisão no caso de 100.000 elementos.
+O algoritmo de hashing por Dobramento fora o mais rápido em todos os cenários.
 
-Nas buscas o algoritmo de Dobramento começa sendo o mais rápido, mas acaba escalando horrívelmente ao aumentar o volume de dados. Nos cenários com grandes volumes de dados o algoritmo mais veloz foi o de Resto de Divisão. Para todos os cenários o algoritmo de Dobramento teve maior méda de comparações.
+__Para quantidades de colisões:__ 
+
+Dos algoritmos de hashing por Multiplicação e Resto de Divisão foram similar para todos os cenários.
+Já o algoritmo de Dobramento, ao aumentar o volume, ocorreram muito mais colisões que os outros, chegando a ter 355% mais colisões que o algoritmo de Resto de Divisão no caso de 100.000 elementos.
+
+__Para as buscas:__
+
+O algoritmo de Dobramento começa sendo o mais rápido, mas acaba escalando horrívelmente ao aumentar o volume de dados. Nos cenários com grandes volumes de dados o algoritmo mais veloz foi o de Resto de Divisão. 
+Para todos os cenários o algoritmo de Dobramento teve maior méda de comparações.
 
 
-Final:
-O algoritmo de Multiplicação é o mais mediano entre os algoritmos testados. Não houveram resultados notáveis.
-O algoritmo de Resto de Divisão é o melhor algoritmo para busca com grandes volumes de dados. Ele também tem um bom tempo de inserção para cenários de menores volumes de dados, mas não é muito mais notável além disso.
-O algoritmo de Dobramento é muito rápido com as inserções, mas não escala muito bem para colisões e busca.
+### Para cada algoritmo:
+- O algoritmo de _Multiplicação_ é o mais mediano entre os algoritmos testados. Não houveram resultados notáveis.
+- O algoritmo de _Resto de Divisão_ é o melhor algoritmo para busca com grandes volumes de dados. Ele também tem um bom tempo de inserção para cenários de menores volumes de dados, mas não é muito mais notável além disso.
+- O algoritmo de _Dobramento_ é muito rápido com as inserções, mas não escala muito bem para colisões e busca.
 
-Conclusão:
+### Conclusão:
 Entre os algoritmos de hashing testados, o algoritmo de Resto de Divisão teve o maior desempenho geral. 
 
 ### Referência para a análise:
