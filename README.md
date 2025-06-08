@@ -25,7 +25,7 @@ O algoritmo de Dobramento começa sendo o mais rápido, mas acaba escalando horr
 Para todos os cenários o algoritmo de Dobramento teve maior méda de comparações.
 
 
-### Para cada algoritmo:
+__Para cada algoritmo:__
 - O algoritmo de _Multiplicação_ é o mais mediano entre os algoritmos testados. Não houveram resultados notáveis.
 - O algoritmo de _Resto de Divisão_ é o melhor algoritmo para busca com grandes volumes de dados. Ele também tem um bom tempo de inserção para cenários de menores volumes de dados, mas não é muito mais notável além disso.
 - O algoritmo de _Dobramento_ é muito rápido com as inserções, mas não escala muito bem para colisões e busca.
@@ -37,7 +37,7 @@ Entre os algoritmos de hashing testados, o algoritmo de Resto de Divisão teve o
 
 _Dados oriundos dos testes realizados no main._
 
-#### Tabela de resultados para 1.000 elementos:
+__Tabela de resultados para 1.000 elementos:__
 
 Tipo de Hashing | Tempo de inserção | Colisões | Tempo médio de busca | Média de comparações na busca
 :--- | :---: | :---: | :---: | :---: 
@@ -45,7 +45,7 @@ Multiplicação | 27 ms | 205 | 3920 ns | 1
 Resto de Divisão | 2 ms | 204 | 3820 ns | 1
 Dobramento | 1 ms | 241 | 2160 ns | 26
 
-#### Tabela de resultados para 10.000 elementos:
+__Tabela de resultados para 10.000 elementos:__
 
 Tipo de Hashing | Tempo de inserção | Colisões | Tempo médio de busca | Média de comparações na busca
 :--- | :---: | :---: | :---: | :---:
@@ -53,7 +53,7 @@ Multiplicação | 24 ms | 2123 | 740 ns | 1
 Resto de Divisão | 11 ms | 2101 | 600 ns | 1  
 Dobramento | 8 ms | 7786 | 1480 ns | 4  
 
-#### Tabela de resultados para 100.000 elementos:
+__Tabela de resultados para 100.000 elementos:__
 
 Tipo de Hashing | Tempo de inserção | Colisões | Tempo médio de busca | Média de comparações na busca
 :--- | :---: | :---: | :---: | :---: 
