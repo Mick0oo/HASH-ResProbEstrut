@@ -8,9 +8,20 @@ Os algoritmos escolhidos para o hashing das tabelas foram: Multiplicação, Rest
 O código se encontra na pasta src. Contém classes para cada HashMap diferente, uma classe Registro (auxiliar) e a classe Main (main, testes).
 
 ## Análise:
-O algoritmo de hashing por Dobramento teve o tempo mais rápido de inserção para todos os cenários.
+Para tempo de inserção o algoritmo de hashing por Dobramento fora o mais rápido em todos os cenários.
 
-Os algoritmos de hashing por Multiplicação e Resto de Divisão tiveram uma quantidade de colisões similar para todos os cenários. Já o algoritmo de Dobramento, ao aumentar o volume, foram ocorridas muito mais colisões que os outros, chegando a ter 355% mais colisões que o algoritmo de Resto de Divisão no caso dos 100.000 elementos.
+As quantidades de colisões dos algoritmos de hashing por Multiplicação e Resto de Divisão foram similar para todos os cenários. Já o algoritmo de Dobramento, ao aumentar o volume, ocorreram muito mais colisões que os outros, chegando a ter 355% mais colisões que o algoritmo de Resto de Divisão no caso de 100.000 elementos.
+
+Nas buscas o algoritmo de Dobramento começa sendo o mais rápido, mas acaba escalando horrívelmente ao aumentar o volume de dados. Nos cenários com grandes volumes de dados o algoritmo mais veloz foi o de Resto de Divisão. Para todos os cenários o algoritmo de Dobramento teve maior méda de comparações.
+
+
+Final:
+O algoritmo de Multiplicação é o mais mediano entre os algoritmos testados. Não houveram resultados notáveis.
+O algoritmo de Resto de Divisão é o melhor algoritmo para busca com grandes volumes de dados. Ele também tem um bom tempo de inserção para cenários de menores volumes de dados, mas não é muito mais notável além disso.
+O algoritmo de Dobramento é muito rápido com as inserções, mas não escala muito bem para colisões e busca.
+
+Conclusão:
+Entre os algoritmos de hashing testados, o algoritmo de Resto de Divisão teve o maior desempenho geral. 
 
 ### Referência para a análise:
 _Dados oriundos dos testes realizados no main._
