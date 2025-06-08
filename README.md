@@ -6,7 +6,8 @@ São criadas tabelas hash com 3 tamanhos (1.000, 10.000 ou 100.000 elementos) pa
 Os algoritmos escolhidos para o hashing das tabelas foram: Multiplicação, Resto de Divisão e Dobramento.
 O código se encontra na pasta src. Contém classes para cada HashMap diferente, uma classe Registro (auxiliar) e a classe Main (main, testes).
 
-## Conteúdo para a análise:
+## Referência para a análise:
+_Dados oriundos dos testes no main._
 
 ### Tabela de resultados para 1.000 elementos:
 
