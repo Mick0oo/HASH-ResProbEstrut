@@ -3,9 +3,10 @@
 ## Escopo do projeto:
 _Trabalho envolvendo tabelas hash e seus diferentes algoritmos de hashing._
 
-São criadas tabelas hash com 3 tamanhos (1.000, 10.000 ou 100.000 elementos) para 3 diferentes algoritmos de hashing diferentes, resultando em 9 tabelas diferentes. Todas usando o mesmo conjunto de dados criado por meio de seed.
+São criadas tabelas hash com 3 tamanhos (1.000, 10.000 ou 100.000 elementos) para 3 diferentes algoritmos de hashing diferentes, resultando em 9 tabelas diferentes. Todas usando o mesmo conjunto de dados criado por meio do uso de seed.
 
-Os algoritmos escolhidos para o hashing das tabelas foram: Multiplicação, Resto de Divisão e Dobramento.
+Os algoritmos escolhidos para o hashing das tabelas foram: _Multiplicação_, _Resto de Divisão_ e _Dobramento_.
+
 O código se encontra na pasta src. Contém classes para cada HashMap diferente, uma classe Registro (auxiliar) e a classe Main (main, testes).
 
 ## Análise:
@@ -33,6 +34,7 @@ Para todos os cenários o algoritmo de Dobramento teve maior méda de comparaç�
 Entre os algoritmos de hashing testados, o algoritmo de Resto de Divisão teve o maior desempenho geral. 
 
 ### Referência para a análise:
+
 _Dados oriundos dos testes realizados no main._
 
 #### Tabela de resultados para 1.000 elementos:
